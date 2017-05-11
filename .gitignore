@@ -4,6 +4,7 @@
 test.db
 test.txt
 sina.html
+ll_env
 
 # C extensions
 *.so
@@ -11,7 +12,7 @@ sina.html
 # Packages
 *.egg
 *.egg-info
-sqlite3
+db.sqlite3
 dist
 build
 eggs
