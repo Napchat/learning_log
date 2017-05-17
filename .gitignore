@@ -12,7 +12,6 @@ ll_env
 # Packages
 *.egg
 *.egg-info
-db.sqlite3
 dist
 build
 eggs

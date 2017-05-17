@@ -1,0 +1,17 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+  <P>Coworkers</P>
+
+  <ul>
+	{% for coworker in coworkers %}
+	  <li>
+		<p>coworker</p>
+	  </li>
+	{% empty %}
+	  <li>No coworkers have been added yet.</li>
+	{% endfor %}
+  </ul>
+  
+{% endblock content %}

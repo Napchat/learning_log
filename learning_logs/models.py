@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# 每一个model相当于一个数据库表
 class Topic(models.Model):
 	'''用户学习的主题'''
 	text = models.CharField(max_length=200)
@@ -21,3 +22,11 @@ class Entry(models.Model):
 
 	def __str__(self):
 		return self.text[:50] + "..."
+
+class Coworker(models.Model):
+	'''合作者'''
+	text = models.CharField(max_length=200)
+	date_added = models.DateTimeField(auto_now_add=True)
+
+	def __str__(self):
+		return self.text
